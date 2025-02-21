@@ -1,0 +1,86 @@
+body {
+    background: linear-gradient(to bottom, #4caf50, #2e7d32);
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* Criando um efeito de sombra para destacar os textos */
+h1,
+h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Caixa principal da aplicação */
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    /* Fundo escuro semi-transparente */
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Estilizando os botões */
+button {
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Estilizando os inputs */
+input,
+select {
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    width: 80%;
+    margin: 5px 0;
+}
+
+/* Lista de partidas */
+.partida {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.partida h3 {
+    color: yellow;
+}
+
+/* Lista de jogadores */
+.jogadores {
+    list-style: none;
+    padding: 0;
+}
+
+.jogadores li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+}
